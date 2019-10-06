@@ -1,1 +1,5 @@
-# FYP
+My Final Year Project topic is Motion Retargeting with Matlab and Deep Learning.
+
+The whole project is divided into two phases, one per semester. During the first phase we managed to utilize the optimization toolbox in Matlab to process motion data stored in .bvh files (from CMU MoCap Library). We achieved acceptable results to retarget skeletons of different limb ratios despite that we failed to tackle the smoothness problem. 
+
+In the second phase we move on to resolve the same problem using Deep Learning. However after we analyze the problem we found out that it's not that possible to work on BVH files directly given such short time, since no one has done this before and processing a skeleton simply takes too much time. So we adjust our aim to merely "visually" retarget the motion. That is, we first divide the whole motion into sets of frames, then we feed each frame (an image) to the network and hopefully it can detect the temporal connection among frames and apply some adjustments. Sadly, the GAN we use did not fulfill our requirements and thus we fail to get any progressive results. 
